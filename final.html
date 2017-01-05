@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>105-1-R Final presentation</title>
+  <title>台股加權指數與投資策略</title>
 
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,8 +20,9 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: '105-1-R Final presentation',
-                        useBuilds: true,
+                title: '台股加權指數與投資策略',
+                        subtitle: '使用R語言進行資料分析-第三組',
+                useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
         enableTouch: true,
@@ -85,22 +86,48 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">106-1-11</p>
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>R Markdown</h2></hgroup><article  id="r-markdown">
+<slide class=''><hgroup><h2>基本操作</h2></hgroup><article >
 
-<p>This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href='http://rmarkdown.rstudio.com' title=''>http://rmarkdown.rstudio.com</a>.</p>
+<img src='https://sin-yao.github.io/105-1-R/function3.png' title='fig:'/>
 
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.</p>
-
-</article></slide><slide class=''><hgroup><h2>Slide with Bullets</h2></hgroup><article  id="slide-with-bullets">
+</article></slide><slide class=''><hgroup><h2>名詞解釋</h2></hgroup><article >
 
 <ul>
-<li>Bullet 1</li>
-<li>Bullet 2</li>
-<li>Bullet 3</li>
+<li>MA1：短時間的股市走向</li>
+<li>MA2：長期的股市走向</li>
+<li>基本假設：上漲時，還會繼續漲；下跌時，還會不斷下跌</li>
+<li>MA1 &gt; MA2 ：現在的股市比往年好 -&gt;建議買!</li>
+<li>MA1 &lt; MA2 ：股價比往年買相差 -&gt;不要買，或賣掉</li>
 </ul>
+
+</article></slide><slide class=''><hgroup><h2>選定時間內的漲跌</h2></hgroup><article >
+
+<img src='https://sin-yao.github.io/105-1-R/TWindex.png' title='fig:'/>
+
+</article></slide><slide class=''><hgroup><h2>進行買賣後的本利和</h2></hgroup><article >
+
+<img src='https://sin-yao.github.io/105-1-R/return.png' title='fig:'/>
+
+</article></slide><slide class=''><hgroup><h2>標準差區間</h2></hgroup><article >
+
+<img src='https://sin-yao.github.io/105-1-R/sd.png' title='fig:'/>
+
+</article></slide><slide class=''><hgroup><h2>結論</h2></hgroup><article >
+
+<ul>
+<li>從股票漲跌與買賣獲利量兩張圖表，可看出……</li>
+</ul>
+
+<ol>
+<li>股票漲時進行買賣，可有較多的獲利</li>
+<li>投資想獲利的話要在大漲時入手或賣出</li>
+<li>以往的觀念：股市降到最低時狂買</li>
+<li>呼呼呼~~這樣可能會被套牢喔</li>
+</ol>
 
 </article></slide><slide class=''><hgroup><h2>Slide with R Output</h2></hgroup><article  id="slide-with-r-output">
 
